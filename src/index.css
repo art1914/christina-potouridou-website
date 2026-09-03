@@ -1,0 +1,25 @@
+@import 'tailwindcss';
+@import '@fontsource/quicksand/500.css';
+@import '@fontsource/quicksand/600.css';
+@import '@fontsource/quicksand/700.css';
+@import '@fontsource/inter/400.css';
+@import '@fontsource/inter/500.css';
+
+@theme {
+  --color-sage: #5b9279;
+  --color-sage-dark: #2f4858;
+  --color-cream: #fbf7f0;
+  --color-charcoal: #3a3a3a;
+  --color-coral: #f4a261;
+  --color-sky: #7fb3d5;
+  --color-sand: #e7dfd3;
+
+  --font-heading: 'Quicksand', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+body {
+  background-color: var(--color-cream);
+  color: var(--color-charcoal);
+  font-family: var(--font-body);
+}
