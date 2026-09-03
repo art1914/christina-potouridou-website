@@ -4,10 +4,11 @@ import react from '@vitejs/plugin-react'
 import { defineConfig } from 'vite'
 
 // https://vite.dev/config/
-export default defineConfig({
+export default defineConfig(({ command }) => ({
+  base: command === 'build' ? '/christina-potouridou-website/' : '/',
   plugins: [react(), tailwindcss()],
   test: {
     environment: 'jsdom',
     setupFiles: ['./src/test/setup.ts'],
   },
-})
+}))
